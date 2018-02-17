@@ -8,5 +8,11 @@ function SacarResto()
     var number2
     nunber1 = document.getElementById("numeroDividendo").value;
     number2 = document.getElementById("numeroDivisor").value;
+    number1 = parseInt (number1);
+    number2 = parseInt (number2);
+    dividir = number1 / number2;
+    alert  ("el resto es" + dividir);
+
+
     
 }
