@@ -25,15 +25,22 @@ function verificar()
   var numero;
   contadorIntentos = contadorIntentos + 1;
   numero = document.getElementById ("numero").value;
-  contadorIntentos = document.getElementById ("intentos").value;
-  if(numero == numeroSecreto){
+  document.getElementById ("intentos").value = contadorIntentos;
+  if(numero == numeroSecreto)
+  {
     alert ("usted es ganador y en tan solo " + contadorIntentos);
   }
   else
-  if (numero < numeroSecreto){
+  if (numero < numeroSecreto)
+  {
     alert("falta para llegar al numero secreto");
-  }else{
+  }else
+  {
     alert ("se paso del numero secreto");
+  }
+  if (contadorIntentos <10){
+  }else {
+    alert ("se termino el juego")
   }
 
 
