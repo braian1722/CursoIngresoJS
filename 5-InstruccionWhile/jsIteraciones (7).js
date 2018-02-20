@@ -8,6 +8,9 @@ function Mostrar()
 	
 	while (respuesta == "si"){
 	numero = prompt ("ingrese los numeros");
+	if (numero == null){
+		break;
+	}
 	numero = parseInt (numero);
 	if (isNaN (numero))
 	continue;

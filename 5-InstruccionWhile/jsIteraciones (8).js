@@ -7,16 +7,19 @@ function Mostrar()
 	var numero;
 	var respuesta='si';
 	while (respuesta == "si"){
-	numero = prompt ("ingrese los numeros");
-	numero = parseInt (numero);
-	if (isNaN (numero))
-	continue;
-	respuesta = prompt ("ingrese otro numero");
-	positivo +=numero;
-	positivo + positivo;
-	negativo += numero;
-	negativo * negativo;
-	contador++
+		numero = prompt ("ingrese los numeros");
+		if (numero == null){
+			break;
+		}
+		numero = parseInt (numero);
+		if (isNaN (numero))
+		continue;
+		respuesta = prompt ("ingrese otro numero");
+		positivo +=numero;
+		positivo + positivo;
+		negativo += numero;
+		negativo * negativo;
+		contador++
 	}
 
 
