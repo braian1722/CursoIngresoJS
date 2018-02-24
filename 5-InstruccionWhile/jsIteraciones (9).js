@@ -9,36 +9,38 @@ function Mostrar()
 	var minimo; 
 
 	while(respuesta!='no')
+
 	{   contador ++;
 		numero = prompt ("ingrese un numero");
-		if (numero==null){
-			break;
-		}
-		numero= parseInt (numero);
-		if (isNaN (numero))
-		continue;
-		respuesta = prompt ("ingrese otro numero");
-		if (contador == 1){
+		numero = parseInt (numero);
+
+		if (contador ==1 )
+		{
 			maximo = numero;
 			minimo = numero;
+
 		}
-		else if(numero <=minimo){
-		  minimo = numero
-		}else if (numero >=maximo){
-		   maximo = numero
-		}
+		else
+		{
+			if (numero >maximo)
+			{
+				maximo = numero;
+			}
+			 if (numero < minimo)
+			{
+				minimo = numero;
+			
 		
-
+		// contador ++
+		respuesta = prompt ("para salir ingrese no")
 		
-
-
+			}
+		document.getElementById("maximo").value= maximo;
+        document.getElementById("minimo").value = minimo;
 		
 
 	
 	}
-
-document.getElementById("maximo").value= maximo;
-document.getElementById("minimo").value = minimo;
-
+       }
 
 }//FIN DE LA FUNCIÓN

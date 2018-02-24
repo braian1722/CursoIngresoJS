@@ -6,20 +6,30 @@ function Mostrar()
 	var negativo=1;
 	var numero;
 	var respuesta='si';
-	while (respuesta == "si"){
-		numero = prompt ("ingrese los numeros");
-		if (numero == null){
-			break;
+	while (respuesta == "si")
+	{    contador ++;
+		respuesta = prompt ("terminar");
+		if (respuesta =="si"){
+			break
 		}
-		numero = parseInt (numero);
-		if (isNaN (numero))
-		continue;
-		respuesta = prompt ("ingrese otro numero");
-		positivo +=numero;
-		positivo + positivo;
-		negativo += numero;
-		negativo * negativo;
-		contador++
+		 numero = prompt ("ingrese un numero");
+		 numero = parseInt (numero);
+		 while (isNaN(numero)){
+			 numero = prompt ("ingrese un numero");
+			 numero = parseInt (numero);
+		 }
+		 if (numero >0){
+			 positivo +=numero;
+			 positivo + positivo;
+			 break;
+		 }
+		  if (numero!=0){
+			 negativo += numero;
+			 negativo * negativo;
+			 break;
+		 }
+
+		
 	}
 
 
