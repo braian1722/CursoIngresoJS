@@ -8,12 +8,16 @@ function Mostrar()
 	var maximo;
 	var minimo; 
 
-	while(respuesta!='no')
+	while(respuesta=="si")
 
 	{   contador ++;
 		numero = prompt ("ingrese un numero");
 		numero = parseInt (numero);
 
+	}
+	while (isNaN(num)){
+		continue;
+	}
 		if (contador ==1 )
 		{
 			maximo = numero;
@@ -35,12 +39,13 @@ function Mostrar()
 		respuesta = prompt ("para salir ingrese no")
 		
 			}
-		document.getElementById("maximo").value= maximo;
-        document.getElementById("minimo").value = minimo;
 		
-
 	
 	}
-       }
+	
+	   }
+
+	   document.getElementById("maximo").value= maximo;
+	   document.getElementById("minimo").value = minimo;
 
 }//FIN DE LA FUNCIÓN
