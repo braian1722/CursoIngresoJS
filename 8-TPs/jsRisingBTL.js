@@ -93,6 +93,7 @@ function ComenzarIngreso ()
            default:
        }
       document.getElementById ("Nacionalidad").value = Nacionalidad;
+      .
 
 
 
