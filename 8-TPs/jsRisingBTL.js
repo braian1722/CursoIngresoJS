@@ -32,6 +32,7 @@ function ComenzarIngreso ()
       sexo = prompt ("ingrese m para masculino y f para femenino");
       while (sexo !="f" && sexo !="m")
             {
+                
             sexo = prompt (" error ingrese sexo");
          
             }
@@ -93,7 +94,7 @@ function ComenzarIngreso ()
            default:
        }
       document.getElementById ("Nacionalidad").value = Nacionalidad;
-      .
+       
 
 
 
