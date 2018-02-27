@@ -2,12 +2,11 @@
 function Mostrar()
 {
 	var number1
-	var number2
-	number1 = document.getElementById("lado")
-	number2 = document.getElementById("lado")
+	var perimetro
+	number1 = document.getElementById("lado").value;
 	number1 = parseInt (number1);
-	number2 = parseInt (number2);
-	suma = (lado*2) + ()
+	perimetro = number1 + number1+ number1+ number1;
+	alert ("el perimetro es" + perimetro);
 	
 }
 

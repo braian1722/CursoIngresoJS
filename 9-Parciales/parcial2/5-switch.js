@@ -3,7 +3,8 @@ function Mostrar()
 {
 	var mesdelaño;
 	mesdelaño = prompt ("ingrese el mes");
-	switch (mesdelaño){
+	switch (mesdelaño) 
+	{
 		case "Enero":
 		case "Febrero":
 		      alert ("veranitoo");
