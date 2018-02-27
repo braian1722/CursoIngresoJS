@@ -17,8 +17,9 @@ function Mostrar()
 		respuesta = number1 * number2
 	}
 
-	 else if (number1 > number2)
-	{
+	 else {
+	 if (number1 > number2)
+	
 		respuesta = (number1 - number2 )
         
 	}
